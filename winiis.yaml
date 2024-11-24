@@ -1,6 +1,6 @@
 ---
 - name: my first windows playbook
-  hosts: localhost
+#  hosts: localhost
 
   tasks:
   - name: my first windows tasks
