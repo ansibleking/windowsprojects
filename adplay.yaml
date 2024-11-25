@@ -1,0 +1,14 @@
+---
+- name: my first windows playbook
+  hosts: windows1
+  tasks:
+  - name: my first windows tasks
+    microsoft.ad.user:
+      identity: mayiru
+      firstname: Bop
+      lastname: smith
+      company: cisco
+      password: Welcome123$
+      state: present
+      
+      
