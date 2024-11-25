@@ -6,3 +6,8 @@
     ansible.windows.win_feature:
       name: Web-Server
       state: absent
+  
+  - name: Start SNMP TRAP
+    ansible.windows.win_service:
+      name: "SNMP TRAP"
+      state: started
