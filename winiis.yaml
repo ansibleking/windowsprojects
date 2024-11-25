@@ -14,5 +14,5 @@
   
   - name: copy file
     ansible.windows.win_copy:
-      src: /tmp/ss.txt
+      src: /etc/hosts
       dest: c:\temp\ss.txt
