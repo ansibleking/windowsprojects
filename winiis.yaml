@@ -11,3 +11,8 @@
     ansible.windows.win_service:
       name: "SNMP TRAP"
       state: absent
+  
+  - name: copy file
+    ansible.windows.win_copy:
+      src: /tmp/ss.txt
+      dest: c:\temp\ss.txt
