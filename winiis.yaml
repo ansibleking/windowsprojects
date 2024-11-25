@@ -5,4 +5,4 @@
   - name: my first windows tasks
     ansible.windows.win_feature:
       name: Web-Server
-      state: present
+      state: absent
