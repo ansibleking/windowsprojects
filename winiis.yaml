@@ -19,3 +19,8 @@
   
   - name: whoami
     ansible.windows.win_whoami:
+
+  - name: port
+    ansible.windows.win_wait_for:
+      port: 9000
+      delay: 60
