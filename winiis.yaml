@@ -1,6 +1,6 @@
 ---
 - name: my first windows playbook
-    hosts: 10.12.217.249
+  hosts: windows
   tasks:
   - name: my first windows tasks
     ansible.windows.win_feature:
