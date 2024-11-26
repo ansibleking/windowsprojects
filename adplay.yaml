@@ -1,16 +1,8 @@
 ---
 - name: my first windows playbook
   hosts: windows1
-  collections:
-    - microsoft.ad.user
   tasks:
   - name: my first windows tasks
-    microsoft.ad.user:
-      identity: mayiru
-      firstname: Bop
-      lastname: smith
-      company: cisco
-      password: Welcome123$
-      state: present
-
-      
+    ansible.windows.win_command:
+      cmd: system_info
+      creates: c:\sysinfo.txt
