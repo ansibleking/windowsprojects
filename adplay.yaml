@@ -1,6 +1,8 @@
 ---
 - name: my first windows playbook
   hosts: windows1
+  collections:
+    - microsoft.ad.user:
   tasks:
   - name: my first windows tasks
     microsoft.ad.user:
@@ -10,5 +12,5 @@
       company: cisco
       password: Welcome123$
       state: present
-      
+
       
