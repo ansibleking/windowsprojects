@@ -28,3 +28,7 @@
   - name: Get info for all installed services
     ansible.windows.win_service_info:
     register: service_info
+
+  - name: print service info
+    ansible.builtin.debug:
+      var: service_info
