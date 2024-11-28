@@ -23,4 +23,8 @@
   - name: add user
     ansible.windows.win_user:
       name: bob
-      state: absent   
+      state: absent
+      
+  - name: Get info for all installed services
+    ansible.windows.win_service_info:
+    register: service_info
