@@ -1,0 +1,11 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: smb-client
+spec:
+  containers:
+    - name: smb-client
+      image: mcr.microsoft.com/windows/servercore:ltsc2022
+      command: ["cmd.exe"]
+      args: ["/c", "ping windows-file-server"]
